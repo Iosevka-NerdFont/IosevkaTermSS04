@@ -1,0 +1,12 @@
+name: "Patch font"
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "38 16 * * 5" # Run at 16:38 UTC on Friday
+
+permissions:
+  contents: write
+
+jobs:
+  call_workflow:
+    uses: Iosevka-NerdFont/workflows/.github/workflows/patch-font.yml@main
