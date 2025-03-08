@@ -10,3 +10,5 @@ permissions:
 jobs:
   call_workflow:
     uses: Iosevka-NerdFont/workflows/.github/workflows/patch-font.yml@main
+    secrets:
+      curl_token: "${{ secrets.CURL_TOKEN }}"
